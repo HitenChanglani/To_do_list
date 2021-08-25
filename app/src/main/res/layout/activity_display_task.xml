@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayTaskActivity">
+
+    <TextView
+        android:id="@+id/taskInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/taskInformation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayTaskNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/displayTaskNameLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/taskInformation"
+        app:layout_constraintTop_toBottomOf="@+id/taskInformation" />
+
+    <TextView
+        android:id="@+id/displayTaskDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/displayTaskDateLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/displayTaskNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/displayTaskNameLabel" />
+
+    <TextView
+        android:id="@+id/displayTaskPriorityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/displayTaskPriorityLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/displayTaskDateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/displayTaskDateLabel" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="@string/cancelButton"
+        app:layout_constraintStart_toStartOf="@+id/displayTaskPriorityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/displayTaskPriorityLabel" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/deleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cancelButton" />
+
+    <TextView
+        android:id="@+id/displayTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/displayTaskName"
+        app:layout_constraintBottom_toBottomOf="@+id/displayTaskNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/displayTaskNameLabel" />
+
+    <TextView
+        android:id="@+id/displayTaskDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/displayTaskDate"
+        app:layout_constraintBottom_toBottomOf="@+id/displayTaskDateLabel"
+        app:layout_constraintStart_toStartOf="@+id/displayTaskName" />
+
+    <TextView
+        android:id="@+id/displayTaskPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/displayTaskPriority"
+        app:layout_constraintBottom_toBottomOf="@+id/displayTaskPriorityLabel"
+        app:layout_constraintStart_toStartOf="@+id/displayTaskDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskActivity">
+
+    <TextView
+        android:id="@+id/createTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/createTaskName"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createTaskDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/createTaskDate"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/createTaskName"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskName" />
+
+    <TextView
+        android:id="@+id/createTaskPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/createTaskPriority"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/createTaskDate"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskDate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="309dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/createTaskPriority"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskPriority">
+
+        <RadioButton
+            android:id="@+id/radioHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioHigh" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioMedium" />
+
+        <RadioButton
+            android:id="@+id/radioLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioLow" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/createTaskCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/createTaskCancelButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/createTaskSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/createTaskSubmitButton"
+        app:layout_constraintBottom_toBottomOf="@+id/createTaskCancelButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/createTaskDateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createTaskDateDisplay"
+        app:layout_constraintBottom_toBottomOf="@+id/createTaskDate"
+        app:layout_constraintStart_toStartOf="@+id/createTaskEditText" />
+
+    <Button
+        android:id="@+id/setDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/setDateButton"
+        app:layout_constraintBottom_toBottomOf="@+id/createTaskDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createTaskEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/taskNameHint"
+        android:inputType="textPersonName"
+        android:text="@string/createTaskEditText"
+        app:layout_constraintBottom_toBottomOf="@+id/createTaskName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/createTaskName"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

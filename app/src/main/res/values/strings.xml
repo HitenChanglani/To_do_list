@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">HW02</string>
+    <string name="createTaskName">Name:</string>
+    <string name="createTaskDate">Date:</string>
+    <string name="createTaskDateDisplay" />
+    <string name="createTaskPriority">Priority:</string>
+    <string name="setDateButton">Set Date</string>
+    <string name="radioHigh">High</string>
+    <string name="radioMedium">Medium</string>
+    <string name="radioLow">Low</string>
+    <string name="createTaskCancelButton">Cancel</string>
+    <string name="createTaskSubmitButton">Submit</string>
+    <string name="createTaskEditText" />
+    <string name="taskNameHint">Task Name</string>
+    <string name="titleMainActivity">To Do List</string>
+    <string name="titleCreateTask">Create Task</string>
+    <string name="titleDisplayTask">Display Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NoOfTasksLabel" />
+    <string name="viewTasksButton">View Tasks</string>
+    <string name="createTaskButton">Create A Task</string>
+    <string name="taskInformation">Task Information</string>
+    <string name="displayTaskNameLabel">Name:</string>
+    <string name="displayTaskDateLabel">Date:</string>
+    <string name="displayTaskPriorityLabel">Priority:</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="deleteButton">Delete</string>
+    <string name="displayTaskName" />
+    <string name="displayTaskDate" />
+    <string name="displayTaskPriority" />
+    <string name="upcomingTasks">Upcoming Tasks</string>
+    <string name="taskNameMain" />
+    <string name="taskDateMain" />
+    <string name="taskPriorityMain" />
+    <string name="actionCancelled">Action Cancelled</string>
+    <string name="mandatoryFields">All fields are mandatory</string>
+    <string name="selectTask">Select Task</string>
+    <string name="none">None</string>
+    <string name="deleteConfirmation">Are you sure you want to delete?</string>
+    <string name="alertMessage">This action cannot be undone!</string>
+    <string name="yesLabel">Yes</string>
+    <string name="noLabel">No</string>
+</resources>
